@@ -108,8 +108,8 @@ ip dhcp pool VOICEVLAN
    option 150 ip 10.61.100.8   
    END
 
-VTP: VLAN TRUNKING PROTOCOL: NEEDs trunking, SYNC VLANS.
-CoreTAAS/BABA:
+!VTP: VLAN TRUNKING PROTOCOL: NEEDs trunking, SYNC VLANS.
+!CoreTAAS/BABA:
 config t
 vtp domain CCNP
 vtp password ENCOR401
@@ -117,7 +117,7 @@ vtp mode server
 exit
 
 !!CREATING AND PLACING PORTS INSIDEAVLAN:
-CORETAAS:
+!CORETAAS:
 config t
 vlan 10
    name WIFIVLAN
@@ -126,7 +126,7 @@ vlan 50
 vlan 100
    name VOICEVLAN
 exit
-COREbabA:
+!COREbabA:
 Config t
 Int Fa 0/2
   switchport mode access
@@ -153,8 +153,8 @@ Int Fa 0/7
   switchport voice vlan 100
  end
 
-IP CAMERA needs MAC dhcp Reservation:
-CoreBABA:
+!IP CAMERA needs MAC dhcp Reservation:
+!CoreBABA:
 ip dhcp pool CAM6
 host 10.61.50.6 255.255.255.0
 client-identifier 001a.0706.c2c5
@@ -239,7 +239,7 @@ Ephone 2
   restart  
 end
 
-@@@Enabling Video Calls
+!!!Enabling Video Calls
 configure terminal
 ephone 1
    video
