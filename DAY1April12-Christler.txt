@@ -326,7 +326,7 @@ dial-peer voice 82 Voip
  session target ipv4:10.82.100.8
  codec g711ULAW
 
-@@@@@@
+!@@@@@@
 !@@@EDGE ROUTE CONFIG
 config t
    hostname EDGEbaba-61
@@ -414,8 +414,8 @@ end
 
 STATIC ROUTING IN WINDOWS:
 CMD
-route add 200.0.0.0 mask 255.255.255.0 10.m.1.4
-route add 10.0.0.0 mask 255.0.0.0 10.m.1.4
+route add 200.0.0.0 mask 255.255.255.0 10.61.1.4
+route add 10.0.0.0 mask 255.0.0.0 10.61.1.4
 
 ********************************************
 
