@@ -201,7 +201,7 @@ dial-peer voice 4 pots
    port 0/0/3
 end
 
-!!IP telephony
+!!IP telephony paste 3x
 config t
 no telephony-service
 telephony-service
@@ -228,12 +228,12 @@ ephone-dn 7
 ephone-dn 8
   number 6188	
 Ephone 1
-  Mac-address ccd8.c1fb.14c9
+  Mac-address 8478.aced.5847
   type 8945
   button 1:1 2:3 3:2 4:4
   restart
 Ephone 2
-  Mac-address ccd8.c1fb.10dd
+  Mac-address 8478.aced.5bb7
   type 8945
   button 1:5 2:6 3:7 4:8
   restart  
@@ -380,7 +380,7 @@ network 0.0.0.0  255.255.255.255 area 61
  conf t
  ip routing 
  ip route 10.11.0.0 255.255.0.0 200.0.0.11
- !ip route 10.12.0.0 255.255.0.0 200.0.0.12
+ ip route 10.12.0.0 255.255.0.0 200.0.0.12
  ip route 10.21.0.0 255.255.0.0 200.0.0.21
  ip route 10.22.0.0 255.255.0.0 200.0.0.22
  ip route 10.31.0.0 255.255.0.0 200.0.0.31
@@ -389,7 +389,7 @@ network 0.0.0.0  255.255.255.255 area 61
  ip route 10.42.0.0 255.255.0.0 200.0.0.42
  ip route 10.51.0.0 255.255.0.0 200.0.0.51
  ip route 10.52.0.0 255.255.0.0 200.0.0.52
- ip route 10.61.0.0 255.255.0.0 200.0.0.61
+ !ip route 10.61.0.0 255.255.0.0 200.0.0.61
  ip route 10.62.0.0 255.255.0.0 200.0.0.62
  ip route 10.71.0.0 255.255.0.0 200.0.0.71
  ip route 10.72.0.0 255.255.0.0 200.0.0.72
